@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  color: #111;
+  font-weight: 300;
+}
+
+body {
+  color: #111;
+}
+
+header {
+  align-items: center;
+  background: rgb(255, 255, 255, 0.3);
+  backdrop-filter: blur(60px);
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 40px 100px;
+  position: fixed;
+  transition: 0.5s;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+header .logo {
+  color: #111;
+  font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+}
+
+header .logo::after {
+  content: ".";
+  color: #ff0157;
+  position: absolute;
+  left: 68px;
+  top: -20px;
+}
+
+header .logo span {
+  color: #ff0157;
+}
+
+header .nav {
+  display: flex;
+  position: relative;
+}
+
+header .nav li {
+  margin-left: 2rem;
+}
+
+header .nav a {
+  color: #111;
+  font-weight: 500;
+}
+
+header .btn {
+  background: #fff;
+  color: #ff0157 !important;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+}
+
+.banner {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.banner::after {
+  content: "";
+  background: url(../images/banner_bg.jpg) no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.banner .content {
+  max-width: 1000px;
+  position: relative;
+  text-align: center;
+}
+
+.banner .content h2 {
+  color: #fff;
+  font-size: 4.4rem;
+  font-weight: 500;
+  line-height: 5rem;
+  margin-top: 4rem;
+}
+
+.banner .content h4 {
+  background: #fff;
+  color: #cfc;
+  color: #ff0157;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 1.3rem;
+}
+
+.banner .content a {
+  background: #ff0157;
+  border: 1px solid;
+  border-color: #ff0157 !important;
+  color: #fff;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-top: 3rem;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.banner .content a:hover {
+  letter-spacing: 6px;
+}
+
+.banner .img-hoja1 {
+  position: absolute;
+  bottom: -300px;
+}
+
+.banner .img-hoja2 {
+  top: -140px;
+  right: -170px;
+  position: absolute;
+}
+
+.banner .img-hoja3 {
+  bottom: -340px;
+  left: -200px;
+  position: absolute;
+}
+
+.banner .img-naranjas {
+  bottom: -380px;
+  left: 0;
+  position: absolute;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-text {
+  color: #ff0157;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+section {
+  padding: 100px;
+}
+
+.ofertas {
+  background: url(../images/ofertas_bg.png);
+}
+
+.ofertas .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.ofertas .content .box {
+  position: relative;
+  width: 340px;
+  margin: 20px;
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.ofertas .content .box .img {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.ofertas .content .box .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ofertas .content .box .price {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #ff0157;
+  color: #fff;
+  padding: 0.2rem 1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.ofertas .content .box .text {
+  padding: 15px 0 5px;
+}
+
+.ofertas .content .box .text h3 {
+  font-weight: 400;
+}
+
+.ofertas .content .box .price span {
+  font-size: 1.7rem;
+  margin-right: 3px;
+}
